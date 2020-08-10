@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="showMessage();">Click Me1!</button>
+    <div id="messageDiv"></div>
+    <button type="button" onclick="showMessage2();">Click Me2!</button>
+    <button type="button" onclick="showMessage3();">Click Me3!</button>
+    <button type="button" onclick="showMessage4();">Click Me4!</button>
+    <script>
+        function showMessage4(){
+            console.log('Xin chào!');
+        }
+        function showMessage3(){
+            document.write('Xin chào!');
+        }
+        function showMessage2(){
+            document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+        }
+        function showMessage(){
+            alert('Xin chào!');
+        }
+    </script>
+</body>
+</html>
