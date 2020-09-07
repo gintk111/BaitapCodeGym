@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên tô</title>
+</head>
+<body>
+    <script>
+        function isPrime(num){
+            if (num < 2){
+                return false;
+            }else {
+                for ( i = 2; i < num ; i++){
+                    if (num % i === 0){
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        dem = 0;
+        j = 2;
+        while (dem < 1000) {
+            if (isPrime(j)) {
+                document.write(j + " ");
+                dem++;
+            }
+            j++;
+        }
+    </script>
+</body>
+</html>

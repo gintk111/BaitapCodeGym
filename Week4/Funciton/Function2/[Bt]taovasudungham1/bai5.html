@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let star = prompt("Nhập tên ngôi sao");
+	    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+	    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+	    let rs = findStar(star);
+	    alert(rs);
+
+	    function findStar(name) {
+	        if(arr1.includes(name)){
+	            return arr2[arr1.indexOf(name)];
+	        } else return "Ko tìm thấy "+name;
+	    }
+	</script>
+</body>
+</html>

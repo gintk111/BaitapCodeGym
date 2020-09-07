@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 1</title>
+</head>
+<body>
+	<input type="" onchange="binhphuong(this.value)" oninput="binhphuong(this.value)">
+	<p id="result"></p>
+	<script type="text/javascript">
+		function binhphuong(num) {
+			num = parseInt(num);
+			 document.getElementById("result").innerHTML = num * num;
+		}
+	</script>
+</body>
+</html>

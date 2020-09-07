@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[Thực Hành] Xây dựng lớp hình tròn</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let Circle = function (radius) {
+			this.radius = radius;
+
+			this.radius = function () {
+				return radius;
+			};
+			this.getArea = function (){
+				return 3.14 * radius * radius;
+			}
+		}
+		let circle = new Circle(2);
+		let radius = circle.radius();
+		let area = circle.getArea(); 
+		alert("radius: " + radius + "; area: " + area);
+	</script>
+</body>
+</html>

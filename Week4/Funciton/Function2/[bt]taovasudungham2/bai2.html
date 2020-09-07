@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 2</title>
+</head>
+<body>
+	<form>
+		<input type="text"  oninput="dientichchuvi(this.value)" placeholder="Nhập bán kính !!!">
+		<button type="Resset">Resset</button>
+		<p id="result"></p>
+	</form>
+	<script type="text/javascript">
+		function dientichchuvi(num) {
+			num = parseInt(num);
+			let result = "Diện tích là: " + num * num * 3.14 + " Chu vi là:" + 2 * num * 3.14;
+			document.getElementById("result").innerHTML = result;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[Bài tập] Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let Temperature = function(c) {
+			this.c = c;
+			this.getF = function () {
+				return this.c * 1.8 + 32;
+
+			}
+			this.getKenvin = function () {
+				return this.c + 273.15;
+			}
+		}
+		let temperature = new Temperature(36.7);
+		alert("Độ f: " + temperature.getF());
+		alert("Độ k: " + temperature.getKenvin());
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[Bài Tập] Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+	<!-- <input type="text" id="trai" name="">
+	<input type="text" id="tren" name="">
+	<input type="text" id="dai" name="">
+	<input type="text" id="rong" name="">
+	<button onclick="getRectangle();">HCM</button> -->
+	<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;">
+	<script type="text/javascript">
+			let Rectangle = function (left, top, width, height) {
+			this.width = width;
+			this.height = height;
+			this.left = left;
+			this.top = top;
+			this.getChuvi = function () {
+				return 2 * this.width + 2 * this.height ;
+			}
+			this.getDientich = function () {
+				return this.width * this.height;
+			}
+			this.getWidth = function () {
+				return this.width;
+			}
+			this.getHeight = function () {
+				return this.height;
+			}
+			this.getTop = function () {
+				return this.top;
+			}
+			this.getLeft = function () {
+				return this.left;
+			}
+		};
+		function getRandomHex(){
+		    return Math.floor(Math.random()*255);
+		};
+		function getRandomColor(){
+		    let red = getRandomHex();
+		    let green = getRandomHex();
+		    let blue = getRandomHex();
+			return "rgb(" + red + "," + blue + "," + green +")";
+		}
+		function getRectangle() {
+			let c = document.getElementById("myCanvas");
+			let ctx = c.getContext("2d");
+			let top = rectangle.getTop();
+			let left = rectangle.getLeft();
+			let width = rectangle.getWidth();
+			let height = rectangle.getHeight();
+			let color = getRandomColor();
+			ctx.beginPath();
+			ctx.rect(left, top, width, height);
+			ctx.fillStyle = color;
+			ctx.fill();
+		};
+		let rectangle = new Rectangle(300, 300, 400, 150);
+		let dientich = rectangle.getDientich();
+		let chuvi = rectangle.getChuvi();
+		// console.log(dientich);
+		// console.log(chuvi);
+		// rectangle.setWidth(document.getElementById("rong").value);
+		// rectangle.setHeight(document.getElementById("dai").value);
+		// rectangle.setTop(document.getElementById("tren").value);
+		// rectangle.setLeft(document.getElementById("trai").value);
+		getRectangle()
+	</script>	
+</body>
+</html>
